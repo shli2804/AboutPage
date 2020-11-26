@@ -1,0 +1,49 @@
+/* 
+NOTE: This CSS provides hints as to which HTML elements you should be using.
+
+The '>' symbol in the CSS selector means that the elements are nested within each other.
+
+E.g. The CSS selector for the paragraph element:
+
+main > div > p { ... }
+
+Would look like this in HTML:
+<main>
+  <div>
+    <p> I'm the paragraph element that is getting styled. </p>
+  </div>
+</main>
+*/
+
+header {
+  background-color:#F8C3CD;
+  border-bottom: 4px solid #DB4D6D;
+}
+
+header > h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-weight: 900;
+  color: #DB4D6D;
+}
+
+aside > figure > img {
+  display: block;
+  width: 250px;
+  margin: 25px auto;
+  border-radius: 50%;
+}
+
+aside > figure > figcaption {
+  text-align: center;
+}
+
+article > section {
+  border: 2px dotted #DB4D6D;
+  padding: 25px;
+}
+
+section > h2 {
+  text-decoration: underline;
+  color: #DB4D6D;
+}
